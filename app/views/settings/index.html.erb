@@ -1,6 +1,6 @@
 <div class="box wide">
   <div class="legend right">
-    <a href="/u/<%= @user.username %>"><%= t('.viewprofile') %></a>
+    <a href="/filters"><%= t('.filterslink') %></a>
      |
      <%= link_to t('.logoutlink'), { :controller => "login", :action => "logout" },
        :data => { :confirm => t('.confirmlogoutlink') },
@@ -8,6 +8,7 @@
   </div>
   <div class="legend">
     <%= t('.accountsettings') %>
+    (<a href="/u/<%= @user.username %>"><%= t('.viewprofile') %></a>)
   </div>
 
   <%= form_for @edit_user, :url => settings_path, :method => :post,
