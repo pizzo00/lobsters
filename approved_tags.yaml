@@ -18,7 +18,7 @@
 - { tag: "debugging", description: "Tecniche e software per il debugging" }
 - { tag: "design", description: "Design e progettazione visuale" }
 - { tag: "devops", description: "Developer Operations" }
-- { tag: "domanda", description: "Chiedi alla community gambe.ro" }
+- { tag: "domanda", description: "Chiedi alla community" }
 - { tag: "dotnet", description: "Piattaforma .NET di Microsoft" }
 - { tag: "erlang-elixir", description: "Linguaggi di programmazione Erlang ed Elixir" }
 - { tag: "etica", description: "Etica del software e del suo sviluppo" }
@@ -44,7 +44,7 @@
 - { tag: "mac", description: "Prodotti Mac di Apple" }
 - { tag: "machinelearning", description: "Machine learning" }
 - { tag: "matematica", description: "Matematica" }
-- { tag: "meta", description: "Argomenti legati al sito e alla comunità di Gambe.ro" }
+- { tag: "meta", description: "Argomenti legati al sito e alla comunità" }
 - { tag: "metodiformali", description: "Metodi di verifica e specifica formale" }
 - { tag: "mobile", description: "Programmazione per l'ambiente mobile" }
 - { tag: "netbsd", description: "Sistema operativo NetBSD" }
@@ -69,7 +69,7 @@
 - { tag: "scala", description: "Linguaggio di programmazione Scala" }
 - { tag: "scalabilità", description: "Scalabilità di sistemi software" }
 - { tag: "scienza", description: "Scienza" }
-- { tag: "presenta", description: "Mostraci i tuoi progetti personali" }
+- { tag: "presenta", description: "Mostra i tuoi progetti personali alla community" }
 - { tag: "sicurezza", description: "Sicurezza di sistemi informatici" }
 - { tag: "sistemidistribuiti", description: "Sistemi distribuiti" }
 - { tag: "sistemioperativi", description: "Sistemi operativi" }
