@@ -74,9 +74,7 @@ module ApplicationHelper
   def right_header_links
     return @right_header_links if @right_header_links
 
-    @right_header_links = {
-      "/filters" => { :title => t('.filterslink') },
-    }
+    @right_header_links = {}
 
     if @user
       if (count = @user.unread_replies_count) > 0
