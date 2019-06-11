@@ -119,7 +119,6 @@ it:
       newreplieslink:
         one: "Una risposta"
         other: "%{count} risposte"
-      filterslink: "Filtri"
       newmessagelink:
         one: "Un nuovo messaggio"
         other: "%{count} nuovi messaggi"
@@ -415,6 +414,7 @@ it:
       deleteaccountflash: "Il tuo account è stato cancellato."
       verifypasswordflash: "La tua password non può essere modificata."
     index:
+      filterslink: "Filtri"
       logoutlink: "Esci"
       confirmlogoutlink: "Sei sicuro di voler uscire?"
       viewprofile: "Profilo"
