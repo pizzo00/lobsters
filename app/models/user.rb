@@ -65,7 +65,7 @@ class User < ActiveRecord::Base
 
   validates_each :username do |record,attr,value|
     if BANNED_USERNAMES.include?(value.to_s.downcase)
-      record.errors.add(attr, "is not permitted")
+      record.errors.add(attr, "non valido")
     end
   end
 
@@ -449,11 +449,11 @@ class User < ActiveRecord::Base
   end
 
   def undeleted_received_messages
-    received_messages.where(:deleted_by_recipient => false)
+    received_messages.where(:deleted_by_recipient => false).order(created_at: :desc)
   end
 
   def undeleted_sent_messages
-    sent_messages.where(:deleted_by_author => false)
+    sent_messages.where(:deleted_by_author => false).order(created_at: :desc )
   end
 
   def unread_message_count
