@@ -793,6 +793,7 @@ a.pagelink.curpage {
 	display: block;
 	padding: 3px;
 	font-size: 9pt;
+	text-decoration: none;
 }
 #downvote_why a:hover {
 	background-color: #eee;

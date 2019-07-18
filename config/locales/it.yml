@@ -346,14 +346,14 @@ it:
       viewreceived: "Vedi messaggi ricevuti"
       viewsent: "Vedi messaggi inviati"
       subjectlabel: "Oggetto"
-      privatemessages: "Messaggi privati ricevuti"
+      privatemessages: "Messaggi privati"
       sent: "Inviato"
       messages_sent: "inviati"
       from: "Da"
       tomsg: "a"
       received: "Ricevuto"
       deleteselected: "Cancella i messaggi selezionati"
-      donothavemessages: "Non hai messaggi privati da %{from}."
+      donothavemessages: "Non hai alcun messaggio privato."
       sentlower: "invia"
       composemessage: "Scrivi un messaggio"
       tomsglabel: "A:"
@@ -674,7 +674,7 @@ it:
     messages_controller:
       messagestitle: "Messaggi"
       messagessenttitle: "Messaggi inviati"
-      flashdelmsg: "%{nbmsg} message%{plural} supprimé%{plural}."
+      flashdelmsg: "%{nbmsg} messaggio/i eliminato/i."
       pluralmsg: "s"
       flashcannotfindmsg: "Messaggio non trovato."
       flashmsgsentto: "Il messaggio è stato inviato a %{user}."
@@ -795,12 +795,12 @@ it:
         other: quasi %{count} anni
       half_a_minute: mezzo minuto
       less_than_x_minutes:
-        zero: meno di un minuto
-        one: meno di un minuto
+        zero: meno di un minuto fa
+        one: meno di un minuto fa
         other: meno di %{count} minuti
       less_than_x_seconds:
-        zero: meno di un secondo
-        one: meno di un secondo
+        zero: meno di un secondo fa
+        one: meno di un secondo fa
         other: meno di %{count} secondi
       over_x_years:
         one: più di un anno
