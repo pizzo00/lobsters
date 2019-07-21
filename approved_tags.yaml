@@ -28,7 +28,6 @@
 - { tag: "evento", description: "Evento per sviluppatori" }
 - { tag: "filosofia", description: "Temi filosofici connessi al software" }
 - { tag: "funzionale(programmazione)", description: "Linguaggi, concetti e pattern funzionali." }
-- { tag: "freebsd", description: "Famiglia di sistemi operativi FreeBSD" }
 - { tag: "giochi", description: "Sviluppo di Videogiochi" }
 - { tag: "go", description: "Linguaggio di programmazione Go" }
 - { tag: "grafica", description: "Grafica" }
@@ -50,9 +49,7 @@
 - { tag: "meta", description: "Argomenti legati al sito e alla comunità" }
 - { tag: "metodiformali", description: "Metodi di verifica e specifica formale" }
 - { tag: "mobile", description: "Programmazione per l'ambiente mobile" }
-- { tag: "netbsd", description: "Sistema operativo NetBSD" }
 - { tag: "objectivec", description: "Linguaggio di programmazione Objective-C" }
-- { tag: "openbsd", description: "Sistema operativo OpenBSD" }
 - { tag: "pdf", description: "Link ad un file PDF", is_media: true }
 - { tag: "performance", description: "Performance di programmi" }
 - { tag: "perl", description: "Linguaggio di programmazione Perl" }
@@ -86,7 +83,5 @@
 - { tag: "unix", description: "Sistemi operativi Unix" }
 - { tag: "vcs", description: "Sistemi di controllo versione" }
 - { tag: "video", description: "Link ad un video", is_media: true }
-- { tag: "virtualizzazione", description: "Virtualizzazione di sistemi operativi" }
-- { tag: "wasm", description: "WebAssembly" }
 - { tag: "web", description: "Sviluppo web" }
 - { tag: "windows", description: "Sistema operativo Windows" }
