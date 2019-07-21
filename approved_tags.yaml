@@ -15,7 +15,7 @@
 - { tag: "criptovalute", description: "Bitcoin ed altre valute" }
 - { tag: "crittografia", description: "Crittografia" }
 - { tag: "css", description: "Cascading Style Sheet" }
-- { tag: "cultura-hacker", description: "Contro-cultura informatica: autonomia, sperimentazione, riutilizzo," }
+- { tag: "cultura-hacker", description: "Contro-cultura informatica: autonomia, sperimentazione, riutilizzo" }
 - { tag: "cultura-it", description: "Cultura del mondo IT, startup ed enterprise" }
 - { tag: "database", description: "Basi di dati" }
 - { tag: "debugging", description: "Tecniche e software per il debugging" }
@@ -27,7 +27,7 @@
 - { tag: "etica", description: "Etica del software e del suo sviluppo" }
 - { tag: "evento", description: "Evento per sviluppatori" }
 - { tag: "filosofia", description: "Temi filosofici connessi al software" }
-- { tag: "funzionale(programmazione)", description: "Linguaggi, concetti e pattern funzionali." }
+- { tag: "funzionale", description: "Linguaggi, concetti e pattern di programmazione funzional" }
 - { tag: "giochi", description: "Sviluppo di Videogiochi" }
 - { tag: "go", description: "Linguaggio di programmazione Go" }
 - { tag: "grafica", description: "Grafica" }
@@ -58,7 +58,7 @@
 - { tag: "politica", description: "Politica" }
 - { tag: "pratiche", description: "Buone pratiche di programmazione" }
 - { tag: "privacy", description: "Privacy e gestione dei dati" }
-- { tag: "progettazione-software", description: "Architetture, pattern, strumenti, metodologie" }
+- { tag: "progettazionesoftware", description: "Architetture, pattern, strumenti, metodologie" }
 - { tag: "python", description: "Linguaggio di programmazione Python" }
 - { tag: "reti", description: "Reti di comunicazione" }
 - { tag: "reverse-engineering", description: "Ingegneria inversa" }
@@ -74,7 +74,8 @@
 - { tag: "sicurezza", description: "Sicurezza di sistemi informatici" }
 - { tag: "sistemidistribuiti", description: "Sistemi distribuiti" }
 - { tag: "sistemioperativi", description: "Sistemi operativi" }
-- { tag: "slide", description: "Link a slide, ad es. slide di una conferenza", is_media: true }
+- { tag: "slide", description: "Link a slide, ad es
+slide di una conferenza", is_media: true }
 - { tag: "società", description: "Società" }
 - { tag: "storia", description: "Storia" }
 - { tag: "strumenti", description: "Strumenti per lo sviluppo software" }
