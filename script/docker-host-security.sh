@@ -1,10 +1,6 @@
 #!/bin/bash
 set -e # Abort on error
 
-RAILS_ENV=$(grep RAILS_ENV .env | xargs)
-IFS='=' read -ra RAILS_ENV <<< "$RAILS_ENV"
-RAILS_ENV=${RAILS_ENV[1]}
-
 if [ $RAILS_ENV = "production" ]; then
 	if [ "$DOCKER_CONTENT_TRUST" != "1" ]; then
 		echo '$DOCKER_CONTENT_TRUST should be set to 1.'

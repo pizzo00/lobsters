@@ -2,10 +2,6 @@
 
 set -e # Abort on error
 
-RAILS_ENV=$(grep RAILS_ENV .env | xargs)
-IFS='=' read -ra RAILS_ENV <<< "$RAILS_ENV"
-RAILS_ENV=${RAILS_ENV[1]}
-
 function check_env_vars () {
   for name; do
     : ${!name:?$name must not be empty}
