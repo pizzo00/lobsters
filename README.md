@@ -39,7 +39,7 @@ file.
   export DOCKER_CONTENT_TRUST=1
   ```
   then run the next steps in a new shell.
-  * If you are **developing** gambe.ro, remove the check for `DOCKER_CONTENT_TRUST` from `script/docker-host-security.sh`, and remove `read_only: true` from the `app` container in `docker-compose.yml`.
+  * If you are **developing** gambe.ro, remove `read_only: true` from the `app` container in `docker-compose.yml`.
 
 * Run `scripts/docker-run.sh`:
   ```bash

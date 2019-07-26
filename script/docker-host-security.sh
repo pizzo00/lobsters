@@ -1,12 +1,18 @@
 #!/bin/bash
 set -e # Abort on error
-if [ "$DOCKER_CONTENT_TRUST" != "1" ]; then
-	echo '$DOCKER_CONTENT_TRUST should be set to 1.'
-	echo "If you're using a CLI, add 'export DOCKER_CONTENT_TRUST=1' to .bashrc and rerun your command in a new shell."
-	exit 1;
+
+if [ $RAILS_ENV = "production" ]; then
+	if [ "$DOCKER_CONTENT_TRUST" != "1" ]; then
+		echo '$DOCKER_CONTENT_TRUST should be set to 1.'
+		echo "If you're using a CLI, add 'export DOCKER_CONTENT_TRUST=1' to .bashrc and rerun your command in a new shell."
+		exit 1;
+	else
+		echo 'Content Trust ok'
+	fi
 else
-	echo 'Content Trust ok'
+	echo 'Running in development mode, no content trust'
 fi
+
 rm -rfv log
 if [ $(stat -c %a /data/log/) != 777 ]; then
 	echo '/data/log/ should have 777 permissions (chmod -R 777 /data/log/).'
