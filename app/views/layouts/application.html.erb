@@ -3,30 +3,30 @@
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <%= favicon_link_tag asset_path('favicon.png') %>
-  <!--
-  <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon.png" />
-  <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon.png" />
-  <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-144.png" />
-  <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144.png" />
-  -->
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="msapplication-TileColor" content="#333333">
+
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="referrer" content="always" />
-  <meta name="theme-color" content="#0E0E0E" />
+  <meta name="theme-color" content="#ff4c22" />
   <% if content_for?(:meta_og) %>
       <%= yield :meta_og %>
   <% else %>
   <meta property="og:url"                content="https://gambe.ro"/>
-<meta property="og:type"               content="website" />
-<meta property="og:title"              content="Gambe.ro" />
-<meta property="og:description"        content="Gambe.ro: la comunità per discutere, capire, creare tecnologia" />
-<%= tag :meta, property: 'og:image', content: image_url('gambero_opengraph_preview.png') %>
-<meta property="og:image:width" content="1200" />
-<meta property="og:image:height" content="1200" />
-<%= tag :meta, property: 'og:image', content: image_url('gambero.png') %>
-<meta property="og:image:height" content="521" />
-<meta property="og:image:width" content="1521" />
-      <% end %>
+  <meta property="og:type"               content="website" />
+  <meta property="og:title"              content="Gambe.ro" />
+  <meta property="og:description"        content="Gambe.ro: la comunità per discutere, capire, creare tecnologia" />
+  <%= tag :meta, property: 'og:image', content: image_url('gambero_opengraph_preview.png') %>
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="1200" />
+  <%= tag :meta, property: 'og:image', content: image_url('gambero.png') %>
+  <meta property="og:image:height" content="521" />
+  <meta property="og:image:width" content="1521" />
+  <% end %>
   <% if @meta_tags %>
     <% @meta_tags.each do |k,v| %>
       <meta name="<%= k %>" content="<%= v %>" />
@@ -55,6 +55,7 @@
       title="<%= @comments_rss_link[:title] %>"
       href="<%= @comments_rss_link[:href] %>" />
   <% end %>
+
 </head>
 <body>
   <div id="wrapper">
