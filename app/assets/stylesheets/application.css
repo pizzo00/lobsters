@@ -9,9 +9,18 @@
 /* generics */
 
 /* force a vertical scrollbar to avoid page-shifting */
+
+
+
 html {
 	overflow-y: scroll;
+	--text-color-link: #2562dc;
 }
+
+html[data-theme='dark']{
+	--text-color-link: #999990;
+}
+
 
 body, textarea, input, button {
 	font-family: "helvetica neue", arial, sans-serif;
@@ -25,7 +34,7 @@ body {
 }
 
 a {
-	color: #2562dc;
+	color: var(--text-color-link);
 	cursor: pointer;
 }
 
