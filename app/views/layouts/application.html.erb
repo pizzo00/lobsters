@@ -13,6 +13,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="referrer" content="always" />
   <meta name="theme-color" content="#ff4c22" />
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <% if content_for?(:meta_og) %>
       <%= yield :meta_og %>
   <% else %>
@@ -81,7 +82,16 @@
           <% right_header_links.each do |u,v| %>
             <a href="<%= u %>" class="<%= v[:class].join(" ") %>"><%=v[:title] %></a>
           <% end %>
-        </span>
+	</span>
+    <div class="nightswitch">
+        <input type="checkbox" name="nightswitch" class="nightswitch-checkbox" id="input-nightswitch">
+        <label class="nightswitch-label" for="input-nightswitch">
+            <span class="nightswitch-inner"></span>
+            <span class="nightswitch-switch"></span>
+        </label>
+    </div>
+
+ 
       </div>
 
       <div class="clear"></div>
