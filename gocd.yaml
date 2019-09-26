@@ -1,7 +1,7 @@
 format_version: 3
 pipelines:
   Gambero1:
-    group: defaultGroup
+    group: Gambero
     label_template: ${COUNT}
     lock_behavior: unlockWhenFinished
     environment_variables:
@@ -11,7 +11,7 @@ pipelines:
         git: https://github.com/gambe-ro/lobsters
         shallow_clone: false
         auto_update: true
-        branch: cd-fixes
+        branch: master
         destination: gambero
     stages:
     - Deploy:
@@ -27,7 +27,7 @@ pipelines:
             - exec:
                 arguments:
                 - -c
-                - cp -v /vagrant/.env .env && script/docker-restart.sh -d
+                - cp -v /vagrant/app.env .env && script/docker-restart.sh -d
                 command: bash
                 working_directory: gambero
                 run_if: passed
@@ -49,4 +49,3 @@ pipelines:
                 - https://gambe.ro
                 command: curl
                 run_if: passed
-
