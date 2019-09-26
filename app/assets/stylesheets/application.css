@@ -15,21 +15,41 @@
 html {
 	overflow-y: scroll;
 	--text-color-link: #2562dc;
+	--text-color-link-visited: #7395d9;
+	--text-color-base: #333;
+	--background-color: #fefefe;
+	--tag-background-color:#fffcd7;
+	--tag-border:#d5d458;
+	--tag-color:#555;
+	--header-links:#30ABCB;
+	--tag-media-color:#ddebf9;
+	--tag-media-border-color:#b2ccf0;
+
 }
 
 html[data-theme='dark']{
 	--text-color-link: #999990;
+	--text-color-link-visited: #7395d9;
+	--text-color-base: white;
+	--background-color: black;
+	--tag-background-color:#fffcd7;
+	--tag-border:#d5d458;
+	--tag-color:#555;
+	--header-links:#30ABCB;
+	--tag-media-color:#ddebf9;
+	--tag-media-border-color:#b2ccf0;
 }
 
 
 body, textarea, input, button {
 	font-family: "helvetica neue", arial, sans-serif;
 	font-size: 10pt;
-	color: #333;
+	
+	color: var(--text-color-base);
 }
 
 body {
-	background-color: #fefefe;
+	background-color: var(--background-color);
 	line-height: 1.45em;
 }
 
@@ -39,7 +59,7 @@ a {
 }
 
 li.story div.details span.link a:visited {
-	color: #7395d9;
+	color: var(--text-color-link-visited);
 }
 
 h1 {
@@ -55,10 +75,10 @@ div.clear {
 }
 
 a.tag {
-	background-color: #fffcd7;
-	border: 1px solid #d5d458;
+	background-color: var(--tag-background-color);
+	border: 1px solid var(--tag-border);
 	border-radius: 5px;
-	color: #555;
+	color: var(--tag-color);
 	font-size: 8pt;
 	margin-left: 0.25em;
 	padding: 0px 0.4em 1px 0.4em;
@@ -67,12 +87,12 @@ a.tag {
 }
 
 span.headerlinks >a.highlighted{
-    color: #30ABCB;
+    color: var(--header-links);
 }
 
 a.tag_is_media {
-	background-color: #ddebf9;
-	border-color: #b2ccf0;
+	background-color: var(--tag-media-color);
+	border-color: var(--tag-media-border-color);
 }
 
 a.tag_meta {
@@ -1334,49 +1354,49 @@ div.comment_unread span.comment_timeago {
 	font-weight: 600;
 }
 
-    .nightswitch {
-	text-align: left;
-        position: relative; width: 77px;
-        -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
-    }
-    .nightswitch-checkbox {
-        display: none;
-    }
-    .nightswitch-label {
-        display: block; overflow: hidden; cursor: pointer;
-        border: 2px solid #999999; border-radius: 15px;
-    }
-    .nightswitch-inner {
-        display: block; width: 200%; margin-left: -100%;
-        transition: margin 0.3s ease-in 0s;
-    }
-    .nightswitch-inner:before, .nightswitch-inner:after {
-        display: block; float: left; width: 50%; height: 25px; padding: 0; line-height: 25px;
-        font-size: 12px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
-        box-sizing: border-box;
-    }
-    .nightswitch-inner:before {
-        content: "Notte";
-        padding-left: 10px;
-        background-color: #29373B; color: #FFFFFF;
-    }
-    .nightswitch-inner:after {
-        content: "Giorno";
-        padding-right: 5px;
-        background-color: #F9F9F9; color: #CC8B29;
-        text-align: right;
-    }
-    .nightswitch-switch {
-        display: block; width: 23px; margin: 1px;
-        background: #FFFFFF;
-        position: absolute; top: 0; bottom: 0;
-        right: 48px;
-        border: 2px solid #999999; border-radius: 15px;
-        transition: all 0.3s ease-in 0s;
-    }
-    .nightswitch-checkbox:checked + .nightswitch-label .nightswitch-inner {
-        margin-left: 0;
-    }
-    .nightswitch-checkbox:checked + .nightswitch-label .nightswitch-switch {
-        right: 0px;
-    }
+.nightswitch {
+text-align: left;
+position: relative; width: 77px;
+-webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.nightswitch-checkbox {
+display: none;
+}
+.nightswitch-label {
+display: block; overflow: hidden; cursor: pointer;
+border: 2px solid #999999; border-radius: 15px;
+}
+.nightswitch-inner {
+display: block; width: 200%; margin-left: -100%;
+transition: margin 0.3s ease-in 0s;
+}
+.nightswitch-inner:before, .nightswitch-inner:after {
+display: block; float: left; width: 50%; height: 25px; padding: 0; line-height: 25px;
+font-size: 12px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+box-sizing: border-box;
+}
+.nightswitch-inner:before {
+content: "Notte";
+padding-left: 10px;
+background-color: #29373B; color: #FFFFFF;
+}
+.nightswitch-inner:after {
+content: "Giorno";
+padding-right: 5px;
+background-color: #F9F9F9; color: #CC8B29;
+text-align: right;
+}
+.nightswitch-switch {
+display: block; width: 23px; margin: 1px;
+background: #FFFFFF;
+position: absolute; top: 0; bottom: 0;
+right: 48px;
+border: 2px solid #999999; border-radius: 15px;
+transition: all 0.3s ease-in 0s;
+}
+.nightswitch-checkbox:checked + .nightswitch-label .nightswitch-inner {
+margin-left: 0;
+}
+.nightswitch-checkbox:checked + .nightswitch-label .nightswitch-switch {
+right: 0px;
+}
