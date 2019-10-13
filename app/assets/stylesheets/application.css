@@ -13,7 +13,6 @@
 
 
 html {
-	overflow-y: scroll;
 	--text-color-link: #2562dc;
 	--text-color-link-visited: #7395d9;
 	--text-color-base: #333;
@@ -22,24 +21,63 @@ html {
 	--tag-border:#d5d458;
 	--tag-color:#555;
 	--header-links:#30ABCB;
+	--home-link:#333;
 	--tag-media-color:#ddebf9;
 	--tag-media-border-color:#b2ccf0;
-
+    --tag-meta-color: #eee;
+    --tag-border-color: #c8c8c8;
+    --more-link-color:#666;
+    --list-color:#888;
+    --comment-link-color:#666;
+    --footer-color:#999;
+    --comment-target-color:#fffcd7;
+    --comment-unread-color:#fee7df7d;
+    --hat-border-color:#bbb;
+    --hat-background-color:#ddd;
+    --container-choices-border:rgba(160,160,160,.8);
+    --page-link-buttons-border-color:#d0d0d0;
+    --page-link-buttons-background-color:#f3f3f3;
+    --page-link-buttons-color:#666;
 }
 
 html[data-theme='dark']{
-	--text-color-link: #999990;
+	--text-color-link: #ccf;
 	--text-color-link-visited: #7395d9;
-	--text-color-base: white;
-	--background-color: black;
-	--tag-background-color:#fffcd7;
-	--tag-border:#d5d458;
-	--tag-color:#555;
-	--header-links:#30ABCB;
-	--tag-media-color:#ddebf9;
-	--tag-media-border-color:#b2ccf0;
+	--text-color-base: #ddd;
+	--background-color: #333;
+	--tag-background-color:#000;
+	--tag-border:#444;
+	--tag-color:#aaa;
+	--header-links:#ccc;
+	--home-link:#fff;
+	--tag-media-border-color:#944;
+	--tag-meta-color: #622;
+	--tag-border-color: #c8c8c8;
+    --input-color: #ddd;
+    --input-background-color:#000;
+    --input-border-color: #444;
+    --more-link-color:#ccc;
+    --list-color:#bbb;
+    --list-color:#ddf;
+    --comment-link-color:#ccf;
+    --footer-color:#bbb;
+    --comment-target-color:#444;
+    --comment-unread-color:#5e5a597d;
+    --hat-border-color:#444;
+    --hat-background-color:#000;
+    --container-choices-border:#444;
+    --container-choices-background:#000;
+    --page-link-buttons-border-color:#444;
+    --page-link-buttons-background-color:#000;
+    --page-link-buttons-color:#bbb;
 }
 
+#wrapper textarea, #wrapper input, #wrapper button
+  {
+    color: var(--input-color);
+    background-color: var(--input-background-color);
+    border-color: var(--input-border-color);
+  }
 
 body, textarea, input, button {
 	font-family: "helvetica neue", arial, sans-serif;
@@ -96,8 +134,8 @@ a.tag_is_media {
 }
 
 a.tag_meta {
-	background-color: #eee;
-	border-color: #c8c8c8;
+	background-color: var(--tag-meta-color);
+	border-color: var(--tag-meta-border-color);
 }
 
 a.tag_domanda, a.tag_presenta {
@@ -106,15 +144,15 @@ a.tag_domanda, a.tag_presenta {
 }
 
 span.hat {
-	border-bottom: 6px solid #bbb;
+	border-bottom: 6px solid var(--hat-border-color);
 	border-radius: 4px;
 	padding: 1px 8px;
 	vertical-align: super;
 	white-space: nowrap;
 }
 span.hat span.crown {
-	background-color: #ddd;
-	border: 1px solid #eee;
+	background-color: var(--hat-background-color);
+	border: 1px solid var(--hat-border-color);
 	border-bottom: 0;
 	border-radius: 5px 5px 0px 0px;
 	font-size: 8pt;
@@ -329,7 +367,7 @@ div#wrapper {
 	padding-right: 0.75em;
 }
 #headertitle a {
-	color: #333;
+	color: var(--header-links);
 	text-decoration: none;
 }
 
@@ -350,7 +388,7 @@ div#wrapper {
 }
 
 #header a.cur_url {
-	color: #333;
+	color: var(--home-link);
 }
 
 #header a.new_messages {
@@ -370,7 +408,7 @@ div#footer {
 	padding-right: 10px;
 }
 div#footer a {
-	color: #999;
+	color: var(--footer-color);
 	text-decoration: none;
 	padding-left: 0.75em;
 }
@@ -497,7 +535,7 @@ ol.stories li.story div.story_liner {
 }
 
 .comment a {
-	color: #666;
+	color: var(--comment-link-color);
 }
 
 ol.stories li:first-child div.story_liner {
@@ -525,7 +563,7 @@ li div.details {
 }
 
 .comment:target {
-	background-color: #fffcd7;
+	background-color: var(--comment-target-color);
 	border-radius: 20px;
 }
 
@@ -537,6 +575,7 @@ li .link {
 li .link a {
 	font-size: 11.5pt;
 	text-decoration: none;
+	color: var(--list-link-color);
 }
 
 li.story .description_present {
@@ -555,7 +594,7 @@ li .tags {
 }
 
 li .domain {
-	color: #888;
+	color: 	color: var(--link-color);;
 	font-style: italic;
 	font-size: 9pt;
 	text-decoration: none;
@@ -604,7 +643,7 @@ li .comment_folder_button:checked ~ div.comment div.voters {
 }
 
 li .byline {
-	color: #888;
+	color: var(--link-color);
 	font-size: 9.5pt;
 }
 li .byline > img.avatar {
@@ -625,7 +664,7 @@ li.story span.byline {
 	margin-left: 0.5em;
 }
 li .byline a {
-	color: #888;
+	color: 	color: var(--link-color);;
 	text-decoration: none;
 }
 /* preserve selection made elsewhere when clicking */
@@ -694,7 +733,7 @@ div.page_link_buttons {
 	margin-left: 40px;
 }
 div.morelink a {
-	color: #666;
+	color: var(--more-link-color);
 	font-weight: bold;
 	text-decoration: none;
 }
@@ -704,9 +743,9 @@ div.page_link_buttons {
 }
 div.page_link_buttons a,
 div.page_link_buttons span {
-	border: 1px solid #d0d0d0;
-	background-color: #f3f3f3;
-	color: #666;
+	border: 1px solid var(--page-link-buttons-border-color);
+	background-color: var(--page-link-buttons-background-color);
+	color: var(--page-link-buttons-background-color);
 	padding: 0.25em 0.5em;
 	font-weight: bold;
 	text-decoration: none;
@@ -1287,7 +1326,8 @@ div.fieldWithErrors {
 /* select2 deuglification */
 
 .select2-container-multi.select2-container-active .select2-choices {
-	border: 1px solid rgba(160,160,160,.8);
+	border: 1px solid var(--container-border);
+	background-color:var(--container-choices-background)
 }
 .select2-container .select2-results .select2-highlighted {
 	background: #3875d7;
@@ -1295,7 +1335,7 @@ div.fieldWithErrors {
 }
 
 .select2-container-multi .select2-choices {
-	border-color: #ccc;
+	border-color: var(--container-border);
 	background-image: none;
 	padding-top: 2px;
 }
@@ -1310,7 +1350,7 @@ div.fieldWithErrors {
 }
 
 .select2-dropdown-open .select2-choice {
-	border: 1px solid #aaa;
+	border: 1px solid var(--container-border);
 	border-bottom-color: transparent;
 	box-shadow        : none;
 }
@@ -1346,7 +1386,7 @@ div.fieldWithErrors {
 
 div.comment_unread {
 	background-clip: content-box;
-	background-color: #fee7df7d;
+	background-color: var(--comment-unread-color);
 }
 
 div.comment_unread span.comment_timeago {
