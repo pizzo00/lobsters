@@ -1424,49 +1424,89 @@ div.comment_unread span.comment_timeago {
 	font-weight: 600;
 }
 
-.nightswitch {
-text-align: left;
-position: relative; width: 77px;
--webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+
+.flipswitch {
+  position: relative;
+  width: 99px;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select: none;
 }
-.nightswitch-checkbox {
-display: none;
+.flipswitch input[type=checkbox] {
+  display: none;
 }
-.nightswitch-label {
-display: block; overflow: hidden; cursor: pointer;
-border: 2px solid #999999; border-radius: 15px;
+
+html body div#wrapper div#inside div.box.wide div.flipswitch label.flipswitch-label{
+float:none;
+width:86px;
+margin-top:40px;
 }
-.nightswitch-inner {
-display: block; width: 200%; margin-left: -100%;
-transition: margin 0.3s ease-in 0s;
+.flipswitch-label {
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  border: 3px solid #949494;
+  border-radius: 16px;
+  float:center;
 }
-.nightswitch-inner:before, .nightswitch-inner:after {
-display: block; float: left; width: 50%; height: 25px; padding: 0; line-height: 25px;
-font-size: 12px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
-box-sizing: border-box;
+.flipswitch-inner {
+  width: 200%;
+  margin-left: -100%;
+  -webkit-transition: margin 0.3s ease-in 0s;
+  -moz-transition: margin 0.3s ease-in 0s;
+  -ms-transition: margin 0.3s ease-in 0s;
+  -o-transition: margin 0.3s ease-in 0s;
+  transition: margin 0.3s ease-in 0s;
 }
-.nightswitch-inner:before {
-content: "Notte";
-padding-left: 10px;
-background-color: #222; color: #FFFFFF;
+.flipswitch-inner:before, .flipswitch-inner:after {
+  float: left;
+  width: 50%;
+  height: 26px;
+  padding: 0;
+  line-height: 26px;
+  font-size: 15px;
+  color: white;
+  font-family: Trebuchet, Arial, sans-serif;
+  font-weight: bold;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
-.nightswitch-inner:after {
-content: "Giorno";
-padding-right: 5px;
-background-color: #F9F9F9; color: #CC8B29;
-text-align: right;
+.flipswitch-inner:before {
+  content: "Scuro";
+  padding-left: 13px;
+  background-color: #000000;
+  color: #D0F8DA;
 }
-.nightswitch-switch {
-display: block; width: 23px; margin: 1px;
-background: #FFFFFF;
-position: absolute; top: 0; bottom: 0;
-right: 48px;
-border: 2px solid #999999; border-radius: 15px;
-transition: all 0.3s ease-in 0s;
+.flipswitch-inner:after {
+  content: " Chiaro";
+  padding-right: 13px;
+  background-color: #FFFFFF;
+  color: #FF4D02;
+  text-align: right;
 }
-.nightswitch-checkbox:checked + .nightswitch-label .nightswitch-inner {
-margin-left: 0;
+.flipswitch-switch {
+  width: 28px;
+  margin: -1px;
+  background: #FFFFFF;
+  border: 3px solid #949494;
+  border-radius: 16px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 71px;
+  -webkit-transition: all 0.3s ease-in 0s;
+  -moz-transition: all 0.3s ease-in 0s;
+  -ms-transition: all 0.3s ease-in 0s;
+  -o-transition: all 0.3s ease-in 0s;
+  transition: all 0.3s ease-in 0s;
 }
-.nightswitch-checkbox:checked + .nightswitch-label .nightswitch-switch {
-right: 0px;
+
+.flipswitch-cb:checked + .flipswitch-label .flipswitch-inner {
+  margin-left: 0;
 }
+.flipswitch-cb:checked + .flipswitch-label .flipswitch-switch {
+  right: 0;
+}
+
+
