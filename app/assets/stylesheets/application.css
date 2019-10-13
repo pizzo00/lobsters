@@ -38,6 +38,7 @@ html {
     --page-link-buttons-border-color:#d0d0d0;
     --page-link-buttons-background-color:#f3f3f3;
     --page-link-buttons-color:#666;
+    --logo:url(/assets/gambero.png);
 }
 
 html[data-theme='dark']{
@@ -70,6 +71,15 @@ html[data-theme='dark']{
     --page-link-buttons-border-color:#444;
     --page-link-buttons-background-color:#000;
     --page-link-buttons-color:#bbb;
+    --logo:url(/assets/gambero_dark.png);
+}
+
+#logo {
+background-image:var(--logo);
+  background-repeat: no-repeat;
+  background-size: 240px 80px;
+  height:80px;
+  width:240px;
 }
 
 #wrapper textarea, #wrapper input, #wrapper button
