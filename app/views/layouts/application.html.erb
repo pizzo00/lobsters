@@ -60,9 +60,11 @@
 </head>
 <body>
   <div id="wrapper">
+  <a href="/" title="<%= Rails.application.name %> <%= raw t('.currenttraffic', :usernb => "#{@traffic.to_i}") %>">
   <div id="logo">
-      <a href="/" title="<%= Rails.application.name %> <%= raw t('.currenttraffic', :usernb => "#{@traffic.to_i}") %>"></a>
      </div>
+      </a>
+    
    <div id="header">
       <div id="headerleft">
         <% if @cur_url.present? && !header_links.keys.include?(@cur_url) && @heading.present? %>
