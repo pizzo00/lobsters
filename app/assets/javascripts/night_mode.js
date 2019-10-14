@@ -1,28 +1,9 @@
-function set_night_mode(){
-	Cookies.set("night_mode",true)
-	document.documentElement.setAttribute('data-theme', 'dark')
-	$("#fs").prop("checked",true)
-
-
-}
-
-function set_day_mode(){
-	Cookies.set("night_mode",false)
-	document.documentElement.setAttribute('data-theme', 'light')
-	$("#fs").prop("checked",false)
-}
-
-function set_mode(night_mode){
-	if(night_mode){
-		console.log("goodnight")
-		set_night_mode();
-				}
-	else{
-		console.log("good morning")
-		set_day_mode();
-		}
-
-
+function set_mode(night_mode)
+{
+    mode = night_mode ? 'dark' :'light'
+    Cookies.set("night_mode",night_mode)
+    document.documentElement.setAttribute('data-theme', mode)
+    $("#fs").prop("checked",night_mode)
 }
 
 $(document).ready(function() {
