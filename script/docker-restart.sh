@@ -23,4 +23,4 @@ script/docker-build.sh
 echo "Bringing down containers..."
 docker-compose down
 echo "Launching containers..."
-docker-compose -p testgambero up $@ # Passes any additional flags
+docker-compose up $@ # Passes any additional flags
