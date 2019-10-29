@@ -617,7 +617,7 @@ li .tags {
 }
 
 li .domain {
-	color: 	color: var(--link-color);;
+	color: var(--link-color);
 	font-style: italic;
 	font-size: 9pt;
 	text-decoration: none;
@@ -687,7 +687,7 @@ li.story span.byline {
 	margin-left: 0.5em;
 }
 li .byline a {
-	color: 	color: var(--link-color);;
+	color: var(--link-color);
 	text-decoration: none;
 }
 /* preserve selection made elsewhere when clicking */
