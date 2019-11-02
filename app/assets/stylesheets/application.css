@@ -49,26 +49,32 @@ html {
 }
 
 html[data-theme='dark']{
-	--text-color-link: #d0f8da;
+	--text-color-link: hsl(135, 0%, 89%); /* #d0f8da; */
 	--text-color-link-visited: #FE6C5F;
 	--text-color-base: #ddd;
 	--background-color: #222;
 	--tag-background-color:#000;
+	/*
 	--tag-border:#d0f8da;
 	--tag-color:#d0f8da;
 	--header-links:#d0f8da;
 	--home-link:#20C20E;
+	*/
+	--tag-border:hsl(135, 0%, 89%);
+	--tag-color:hsl(135, 0%, 89%);
+	--header-links:hsl(135, 0%, 89%);
+	--home-link: hsl(114, 0%, 41%);
 	--list-link-color:white;
 	--tag-media-border-color:#944;
 	--tag-meta-color: #622;
-	--tag-border-color: #d0f8da;
+	--tag-border-color: hsl(135, 0%, 89%); /* #d0f8da; */
     --input-color: #ddd;
     --input-background-color:#000;
     --input-border-color: #444;
     --more-link-color:#ccc;
     --list-color:#bbb;
-    --comment-link-color:#d0f8da;
-    --footer-color:#d0f8da;
+    --comment-link-color: hsl(135, 0%, 89%); /* #d0f8da; */
+    --footer-color: hsl(135, 0%, 89%); /* #d0f8da; */
     --comment-target-color:#444;
     --comment-unread-color:#5e5a597d;
     --hat-border-color:#444;
@@ -81,8 +87,8 @@ html[data-theme='dark']{
     --logo:url(/assets/gambero_dark.png);
 	--tags-form-choices-highlighted-background:#444;
 	--tags-form-choices-highlighted-color:white;
-    --upvote-arrow-color:#20C20E;
-    --markdown-help-label-color:#d0f8da;
+    --upvote-arrow-color: hsl(114, 0%, 41%);/* #20C20E; */
+    --markdown-help-label-color: hsl(135, 0%, 89%); /* #d0f8da; */
     --markdown-background-color:#222;
     --table-border-color:#444;
 }
