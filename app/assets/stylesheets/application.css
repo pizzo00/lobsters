@@ -49,8 +49,8 @@ html {
 }
 
 html[data-theme='dark']{
-	--text-color-link: hsl(135, 0%, 89%); /* #d0f8da; */
-	--text-color-link-visited: #FE6C5F;
+	--text-color-link: hsl(0, 0%, 89%); /* #d0f8da; */
+	--text-color-link-visited: hsl(0, 0%, 74%); /* #FE6C5F; */
 	--text-color-base: #ddd;
 	--background-color: #222;
 	--tag-background-color:#000;
