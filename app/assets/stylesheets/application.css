@@ -46,6 +46,7 @@ html {
     --markdown-background-color:#f4f4f4;
     --table-border-color:#cacaca;
     --table-background-color:#eaeaea;
+    --odd-zebra-background-color:#f5f5f5;
 }
 
 html[data-theme='dark']{
@@ -85,6 +86,7 @@ html[data-theme='dark']{
     --markdown-help-label-color:#d0f8da;
     --markdown-background-color:#222;
     --table-border-color:#444;
+    --odd-zebra-background-color:#666;
 }
 
 #logo {
@@ -1076,12 +1078,12 @@ table.thread td img {
 
 table.data tr.row0 td,
 table.data.zebra tr:nth-child(even) td {
-	background-color: #f8f8f8;
+	background-color: var(--background-color);
 	border-bottom: 1px solid #eaeaea;
 }
 table.data tr.row1 td,
 table.data.zebra tr:nth-child(odd) td {
-	background-color: #f5f5f5;
+	background-color: var(--odd-zebra-background-color);
 	border-bottom: 1px solid #eaeaea;
 }
 table.data tr.nobottom td {
