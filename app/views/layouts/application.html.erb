@@ -13,6 +13,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="referrer" content="always" />
   <meta name="theme-color" content="#ff4c22" />
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <% if content_for?(:meta_og) %>
       <%= yield :meta_og %>
   <% else %>
@@ -59,7 +60,11 @@
 </head>
 <body>
   <div id="wrapper">
-      <a href="/" title="<%= Rails.application.name %> <%= raw t('.currenttraffic', :usernb => "#{@traffic.to_i}") %>"><%= image_tag("gambero.png", width:"300" )%></a>
+  <a href="/" title="<%= Rails.application.name %> <%= raw t('.currenttraffic', :usernb => "#{@traffic.to_i}") %>">
+  <div id="logo">
+     </div>
+      </a>
+
    <div id="header">
       <div id="headerleft">
         <% if @cur_url.present? && !header_links.keys.include?(@cur_url) && @heading.present? %>
@@ -81,7 +86,9 @@
           <% right_header_links.each do |u,v| %>
             <a href="<%= u %>" class="<%= v[:class].join(" ") %>"><%=v[:title] %></a>
           <% end %>
-        </span>
+	</span>
+
+ 
       </div>
 
       <div class="clear"></div>

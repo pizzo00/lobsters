@@ -1,4 +1,18 @@
+@media only screen and (max-width: 480px){
+html[data-theme='dark']{
+    --comment-background-color:#444;
+    --comment-bubble-color:#d0f8da;
+    --stories-background:#222;
+	}
+
+	html{
+    --comment-background-color:#e8e8e8;
+    --comment-bubble-color:#ccc;
+    --stories-background:#fbfbfb;
+	}
+}
 @media only screen and (max-width: 480px) {
+
 	html {
 		-webkit-text-size-adjust: none;
 	}
@@ -12,8 +26,7 @@
 	div#leader {
 		margin: 0;
 		padding: 8px 5px;
-		background-color: #eee;
-		border-bottom: 1px solid #ccc;
+		border-bottom: 1px solid var(--comment-bubble-color);
 	}
 	div#leader {
 		padding: 8px;
@@ -97,18 +110,18 @@
 	}
 
 	ol.stories.list li.story {
-		border-bottom: 1px solid #e0e0e0;
+		border-bottom: 1px solid var(--comment-bubble-color);
 		display: table;
 	}
 	ol.stories.list li.story div.story_liner {
-		background-color: #fbfbfb;
+		background-color: var(--stories-background);
 		display: table-cell;
 		padding-top: 0.5em;
 		padding-bottom: 0.75em;
 		width: 100%;
 	}
 	ol.stories.list li.story .mobile_comments {
-		background-color: #e8e8e8;
+		background-color: var(--comment-background-color);
 		display: table-cell !important;
 		font-size: 11pt;
 		min-width: 40px;
@@ -119,7 +132,7 @@
 	ol.stories.list li.story .mobile_comments span:before {
 		border-style: solid;
 		border-width: 0px 6px 3px 0px;
-		border-color: #ccc;
+		border-color: var(--comment-bubble-color);
 		border-bottom-right-radius: 13px;
 		bottom: -10px;
 		content: "";
@@ -132,7 +145,7 @@
 	}
 	ol.stories.list li.story .mobile_comments span:after {
 		border-bottom-right-radius: 10px;
-		border-color: #ccc;
+		border-color: var(--comment-bubble-color);
 		border-style: solid;
 		border-width: 0px 3px 3px 0px;
 		bottom: -10px;
@@ -145,8 +158,8 @@
 		z-index: 10;
 	}
 	ol.stories.list li.story .mobile_comments span {
-		background-color: #ccc;
-		border: 1px solid #ccc;
+		background-color: var(--comment-bubble-color);
+		border: 1px solid var(--comment-bubble-color);
 		border-radius: 5px;
 		color: #333;
 		display: block;
@@ -162,16 +175,16 @@
 		outline: 0;
 	}
 	ol.stories.list li.story .mobile_comments.zero span {
-		color: gray;
+		color: var(--comment-bubble-color);
 	}
 	ol.stories.list li.story .mobile_comments.zero span {
-		background-color: #d8d8d8;
+		background-color: var(--comment-bubble-color);
 		color: #999;
 	}
 	ol.stories.list li.story .mobile_comments.zero span,
 	ol.stories.list li.story .mobile_comments.zero span:before,
 	ol.stories.list li.story .mobile_comments.zero span:after {
-		border-color: #d8d8d8;
+		border-color: var(--comment-bubble-color);
 	}
 	ol.stories.list li.story span.comments_label {
 		display: none;
