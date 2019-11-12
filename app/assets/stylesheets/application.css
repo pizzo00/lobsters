@@ -22,9 +22,12 @@ html {
 	--tag-color:#555;
 	--header-links:#777;
 	--home-link:#222;
-	--tag-media-color:#ddebf9;
-	--tag-media-border-color:#b2ccf0;
-    --tag-meta-color: #eee;
+	--tag-media-color:#555;
+	--tag-media-background-color:#ddebf9;
+	--tag-media-border-color:#555;
+    --tag-meta-color: black;
+    --tag-meta-background-color: #ffd2bf;
+    --tag-meta-border-color: #fda078;
     --tag-border-color: #c8c8c8;
     --more-link-color:#666;
     --list-color:#888;
@@ -60,8 +63,12 @@ html[data-theme='dark']{
 	--header-links:#d0f8da;
 	--home-link:#20C20E;
 	--list-link-color:white;
-	--tag-media-border-color:#944;
-	--tag-meta-color: #622;
+	--tag-media-color:#99b5d0;
+	--tag-media-background-color: #000;
+	--tag-media-border-color:#99b5d0;
+	--tag-meta-color:#fda078;
+	--tag-meta-background-color: #000;
+    --tag-meta-border-color: #fda078;
 	--tag-border-color: #d0f8da;
     --input-color: #ddd;
     --input-background-color:#000;
@@ -154,17 +161,14 @@ span.headerlinks >a.highlighted{
 }
 
 a.tag_is_media {
-	background-color: var(--tag-media-color);
+    color:var(--tag-media-color);
+	background-color: var(--tag-media-background-color);
 	border-color: var(--tag-media-border-color);
 }
 
-a.tag_meta {
-	background-color: var(--tag-meta-color);
-	border-color: var(--tag-meta-border-color);
-}
-
-a.tag_domanda, a.tag_presenta {
-	background-color: var(--tag-meta-color);
+a.tag_domanda, a.tag_presenta, a.tag_meta{
+    color: var(--tag-meta-color);
+	background-color: var(--tag-meta-background-color);
 	border-color: var(--tag-meta-border-color);
 }
 
