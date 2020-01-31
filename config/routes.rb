@@ -24,6 +24,7 @@ Lobsters::Application.routes.draw do
     get "/upvoted/page/:page" => "home#upvoted"
 
     get "/top" => "home#top"
+    get "/top/rss" => "home#top", :format => "rss"
     get "/top/page/:page" => "home#top"
     get "/top/:length" => "home#top"
     get "/top/:length/page/:page" => "home#top"
