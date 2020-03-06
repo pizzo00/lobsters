@@ -23,11 +23,13 @@
 - { tag: "devops", description: "Developer Operations" }
 - { tag: "domanda", description: "Chiedi alla community" }
 - { tag: "dotnet", description: "Piattaforma .NET di Microsoft" }
+- { tag: "economia", description: "Business, macro-economia, finanza, imprenditoria" }
 - { tag: "erlang-elixir", description: "Linguaggi di programmazione Erlang ed Elixir" }
 - { tag: "etica", description: "Etica del software e del suo sviluppo" }
 - { tag: "evento", description: "Evento per sviluppatori" }
 - { tag: "filosofia", description: "Temi filosofici connessi al software" }
-- { tag: "funzionale", description: "Linguaggi, concetti e pattern di programmazione funzional" }
+- { tag: "foss", description: "Software libero e open source" }
+- { tag: "funzionale", description: "Linguaggi, concetti e pattern di programmazione funzionale" }
 - { tag: "giochi", description: "Sviluppo di Videogiochi" }
 - { tag: "go", description: "Linguaggio di programmazione Go" }
 - { tag: "grafica", description: "Grafica" }
@@ -71,6 +73,7 @@
 - { tag: "scalabilità", description: "Scalabilità di sistemi software" }
 - { tag: "scienza", description: "Scienza" }
 - { tag: "presenta", description: "Mostra i tuoi progetti personali alla community" }
+- { tag: "salute", description: "Sistemi medicali, bio-hacking, salute pubblica" }
 - { tag: "sicurezza", description: "Sicurezza di sistemi informatici" }
 - { tag: "sistemidistribuiti", description: "Sistemi distribuiti" }
 - { tag: "sistemioperativi", description: "Sistemi operativi" }
