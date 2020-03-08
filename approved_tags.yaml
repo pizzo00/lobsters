@@ -10,7 +10,6 @@
 - { tag: "browsers", description: "Web browsers" }
 - { tag: "c", description: "Linguaggio di programmazione C" }
 - { tag: "c++", description: "Linguaggio di programmazione C++" }
-- { tag: "clojure", description: "Linguaggio di programmazione Clojure" }
 - { tag: "compilatori", description: "Design di compilatori" }
 - { tag: "criptovalute", description: "Bitcoin ed altre valute" }
 - { tag: "crittografia", description: "Crittografia" }
@@ -80,7 +79,6 @@ slide di una conferenza", is_media: true }
 - { tag: "storia", description: "Storia" }
 - { tag: "strumenti", description: "Strumenti per lo sviluppo software" }
 - { tag: "testing", description: "Testing di software" }
-- { tag: "trascrizione", description: "Link ad una trascrizione, es. di una conferenza", is_media: true }
 - { tag: "unix", description: "Sistemi operativi Unix" }
 - { tag: "vcs", description: "Sistemi di controllo versione" }
 - { tag: "video", description: "Link ad un video", is_media: true }
