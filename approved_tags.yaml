@@ -10,7 +10,6 @@
 - { tag: "browsers", description: "Web browsers" }
 - { tag: "c", description: "Linguaggio di programmazione C" }
 - { tag: "c++", description: "Linguaggio di programmazione C++" }
-- { tag: "clojure", description: "Linguaggio di programmazione Clojure" }
 - { tag: "compilatori", description: "Design di compilatori" }
 - { tag: "criptovalute", description: "Bitcoin ed altre valute" }
 - { tag: "crittografia", description: "Crittografia" }
@@ -23,11 +22,13 @@
 - { tag: "devops", description: "Developer Operations" }
 - { tag: "domanda", description: "Chiedi alla community" }
 - { tag: "dotnet", description: "Piattaforma .NET di Microsoft" }
+- { tag: "economia", description: "Business, macro-economia, finanza, imprenditoria" }
 - { tag: "erlang-elixir", description: "Linguaggi di programmazione Erlang ed Elixir" }
 - { tag: "etica", description: "Etica del software e del suo sviluppo" }
 - { tag: "evento", description: "Evento per sviluppatori" }
 - { tag: "filosofia", description: "Temi filosofici connessi al software" }
-- { tag: "funzionale", description: "Linguaggi, concetti e pattern di programmazione funzional" }
+- { tag: "foss", description: "Software libero e open source" }
+- { tag: "funzionale", description: "Linguaggi, concetti e pattern di programmazione funzionale" }
 - { tag: "giochi", description: "Sviluppo di Videogiochi" }
 - { tag: "go", description: "Linguaggio di programmazione Go" }
 - { tag: "grafica", description: "Grafica" }
@@ -43,13 +44,10 @@
 - { tag: "libro", description: "Libro" }
 - { tag: "linux", description: "Sistema operativo Linux" }
 - { tag: "lisp", description: "Linguaggio di programmazione Lisp" }
-- { tag: "lua", description: "Linguaggio di programmazione Lua" }
 - { tag: "machinelearning", description: "Machine learning" }
 - { tag: "matematica", description: "Matematica" }
 - { tag: "meta", description: "Argomenti legati al sito e alla comunità" }
-- { tag: "metodiformali", description: "Metodi di verifica e specifica formale" }
 - { tag: "mobile", description: "Programmazione per l'ambiente mobile" }
-- { tag: "objectivec", description: "Linguaggio di programmazione Objective-C" }
 - { tag: "pdf", description: "Link ad un file PDF", is_media: true }
 - { tag: "performance", description: "Performance di programmi" }
 - { tag: "perl", description: "Linguaggio di programmazione Perl" }
@@ -71,6 +69,7 @@
 - { tag: "scalabilità", description: "Scalabilità di sistemi software" }
 - { tag: "scienza", description: "Scienza" }
 - { tag: "presenta", description: "Mostra i tuoi progetti personali alla community" }
+- { tag: "salute", description: "Sistemi medicali, bio-hacking, salute pubblica" }
 - { tag: "sicurezza", description: "Sicurezza di sistemi informatici" }
 - { tag: "sistemidistribuiti", description: "Sistemi distribuiti" }
 - { tag: "sistemioperativi", description: "Sistemi operativi" }
@@ -80,7 +79,6 @@ slide di una conferenza", is_media: true }
 - { tag: "storia", description: "Storia" }
 - { tag: "strumenti", description: "Strumenti per lo sviluppo software" }
 - { tag: "testing", description: "Testing di software" }
-- { tag: "trascrizione", description: "Link ad una trascrizione, es. di una conferenza", is_media: true }
 - { tag: "unix", description: "Sistemi operativi Unix" }
 - { tag: "vcs", description: "Sistemi di controllo versione" }
 - { tag: "video", description: "Link ad un video", is_media: true }
