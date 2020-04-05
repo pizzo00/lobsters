@@ -1,20 +1,40 @@
-
 function set_mode(night_mode)
 {
-    mode = night_mode ? 'dark' :'light'
-    window.localStorage.setItem("night_mode", night_mode)
-    document.documentElement.setAttribute('data-theme', mode)
+    let mode = night_mode ? 'dark' :'light';
+    window.localStorage.setItem("night_mode", night_mode);
+    document.documentElement.setAttribute('data-theme', mode);
     document.getElementById("ns").checked = night_mode
 }
 
+function is_night_mode_default()
+{
+    return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+}
 
 document.addEventListener("DOMContentLoaded", function() {
-	var night_mode = window.localStorage.getItem("night_mode")
+	let night_mode = window.localStorage.getItem("night_mode");
 
-	set_mode(night_mode=="true")
-    var ns= document.getElementById("ns")
-    ns.onchange = function() {
-        set_mode(ns.checked)
+    if(night_mode==null) // night_mode not set
+        set_mode(is_night_mode_default()); //Set default
+    else
+	    set_mode(night_mode=="true");
+
+    let night_switch = document.getElementById("ns");
+    if(night_switch) {
+        night_switch.onchange = function() {
+            set_mode(night_switch.checked);
+        };
 	}
 
-})
+    //Default mode change event listener
+    let matchMedia = window.matchMedia;
+    if(matchMedia) {
+        let preferColorScheme = window.matchMedia('(prefers-color-scheme: dark)');
+        if(preferColorScheme) {
+            preferColorScheme.onchange = function () {
+                set_mode(preferColorScheme.matches);
+            };
+        }
+    }
+});
+
